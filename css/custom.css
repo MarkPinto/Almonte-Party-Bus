@@ -3,3 +3,53 @@ body
 {
   padding-top: 3.5rem;
 }
+
+.image-background
+{
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../image/header_bus.jpg");
+	background-size: cover;
+	background-position: left center;
+}
+
+.logo-font
+{
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 25px;
+}
+
+.slogan
+{
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	font-family: 'aramisitalic', sans-serif;
+}
+
+@font-face 
+{
+    font-family: 'aramisitalic';
+    src: url('../fonts/aramisi-webfont.woff2') format('woff2'),
+         url('../fonts/aramisi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 600px)
+{
+	.slogan
+	{
+		font-size: 80px;
+	}
+}
+
+@media screen and (max-width: 444px)
+{
+	.image-background
+	{
+		background-position: left top;
+	}
+	.slogan
+	{
+		font-size: 60px;
+	}
+}
